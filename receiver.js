@@ -233,7 +233,7 @@ document.getElementById("createPlanBtn").onclick = async () => {
     const chainId = (await provider.getNetwork()).chainId;
 
     const activationLink =
-      `${window.location.origin}/activate.html` +
+      `${window.location.origin}/start.html` +
       `?chainId=${chainId}` +
       `&contract=${contractAddress}` +
       `&planId=${planId}`;
