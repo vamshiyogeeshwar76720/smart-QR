@@ -1,3 +1,4 @@
+//this is connected to the activate.html page
 import { contractABI } from "./abi.js";
 
 const params = new URLSearchParams(window.location.search);
