@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Scan EMI QR</title>
+
+    <script src="https://unpkg.com/html5-qrcode"></script>
+    <script type="module" src="sender.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+
+        #reader {
+            width: 320px;
+            margin: auto;
+        }
+
+        #infoBox {
+            display: none;
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Scan EMI QR</h1>
+    <p>The sender does NOT need to connect wallet or use the app.</p>
+
+    <div id="reader"></div>
+
+    <div id="infoBox">
+        <h3>EMI Details:</h3>
+        <p><b>Blockchain:</b> <span id="qrBlockchain"></span></p>
+        <p><b>Token:</b> <span id="qrToken"></span></p>
+        <p><b>Receiver Address:</b> <span id="qrReceiver"></span></p>
+
+        <hr>
+
+        <p><b>Next Step:</b></p>
+        <p>Send the FIRST PAYMENT manually to the receiver address using your wallet app (MetaMask, TrustWallet, etc.).
+        </p>
+    </div>
+
+</body>
+
+</html>
